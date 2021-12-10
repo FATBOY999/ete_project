@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".order"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="#CED5CA">
+
+   <ListView
+       android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/order_lv"
+        />
+
+   <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+       android:id="@+id/order_order"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       android:layout_margin="16dp"
+       android:contentDescription="@string/order"
+       app:icon="@drawable/ic_baseline_payment_24"
+       android:text="@string/order"
+       />
+
+</FrameLayout>

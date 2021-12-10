@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#34495E"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/white_anchor"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:padding="5dp"
+            android:contentDescription="@string/picture"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/vnv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:contentDescription="@string/type" />
+
+
+        <RatingBar
+            android:id="@+id/ratee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/price"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adddd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="35dp"
+            android:backgroundTint="#536465"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

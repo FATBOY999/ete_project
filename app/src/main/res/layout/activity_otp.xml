@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OTP"
+    android:background="@drawable/back3"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="@string/verification"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="@string/please_type_the_verification_code_sent_to_your_mobile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:itemBackground="#D8EAF1"
+        android:textColor="#1C1E22"
+        app:OtpItemCount="6"
+        app:OtpLineColor="#1B96B5"
+        app:OtpViewType="rectangle"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resendd"
+        android:layout_marginTop="630dp"
+        android:layout_marginStart="100dp"
+        android:text="@string/click_here_to_resend"
+        android:layout_centerHorizontal="true"
+        android:textColor="#334C33"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>

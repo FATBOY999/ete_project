@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rateee"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rate_name"
+        android:textSize="50sp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <com.willy.ratingbar.RotationRatingBar
+        android:id="@+id/rate_ratebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srb_numStars="5"
+        app:srb_minimumStars="1"
+        app:srb_rating="2"
+        app:srb_starWidth="30dp"
+        app:srb_starHeight="30dp"
+        app:srb_starPadding="15dp"
+        app:srb_stepSize="0.5"
+        app:srb_isIndicator="false"
+        app:srb_clickable="true"
+        app:srb_scrollable="true"
+        app:srb_clearRatingEnabled="true"
+        app:srb_drawableEmpty="@drawable/empty"
+        app:srb_drawableFilled="@drawable/filled"
+        android:layout_below="@+id/rate_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_ratebar"
+        android:layout_marginTop="50dp"
+        android:text="@string/submit_rating"
+        android:id="@+id/rate_submit"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_below="@+id/rate_submit"
+        android:layout_marginTop="30dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:context=".MapsActivity" />
+
+
+</RelativeLayout>

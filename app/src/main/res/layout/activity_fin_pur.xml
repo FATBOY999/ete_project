@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fin_pur"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/back5"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/payment"
+        android:textColor="@color/black"
+        android:layout_marginStart="35dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30sp"
+        />
+
+    <com.cooltechworks.creditcarddesign.CreditCardView
+        android:id="@+id/pur_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp" />
+
+
+    <com.mukesh.OtpView
+        android:id="@+id/pur_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:itemBackground="#D8EAF1"
+        android:textColor="#1C1E22"
+        app:OtpItemCount="6"
+        app:OtpLineColor="#1B96B5"
+        app:OtpViewType="rectangle"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fin_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_here_to_resend"
+        android:textColor="#E31D1D"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
